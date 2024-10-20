@@ -1,0 +1,197 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* フォームコンテナ */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ログイン・新規登録の画面 */
+.login-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box,
+.social-login-box {
+    margin-bottom: 20px;
+}
+
+.login-box {
+    text-align: center; /* 中央揃え */
+}
+
+.login-box label {
+    margin-top: 10px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: calc(100% - 20px);
+}
+
+.line-btn,
+.linkedin-btn,
+.guest-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.line-btn {
+    background-color: #00c300;
+    color: white;
+}
+
+.line-btn:hover {
+    background-color: #009f00;
+}
+
+.linkedin-btn {
+    background-color: #0073b1;
+    color: white;
+}
+
+.linkedin-btn:hover {
+    background-color: #005f8a;
+}
+
+.guest-btn,
+.guesthinan-btn,
+.guestjichitai-btn {
+    background-color: #6c757d; /* グレー */
+    color: white;
+}
+
+.guest-btn:hover,
+.guesthinan-btn:hover,
+.guestjichitai-btn:hover {
+    background-color: #5a6268; /* ホバー時のグレー */
+}
+
+/* 新規ユーザー登録ボタンのスタイル */
+.new-user-btn {
+    display: block;
+    width: 100%; /* ログインボタンと同じ幅 */
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #5a6268; /* 濃いグレー */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-user-btn:hover {
+    background-color: #4e555b; /* ホバー時の濃いグレー */
+}
+
+/* パスワードリセットリンク */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* メディアクエリ (モバイル対応) */
+@media (max-width: 600px) {
+    form, .login-container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .line-btn,
+    .linkedin-btn,
+    .guest-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
